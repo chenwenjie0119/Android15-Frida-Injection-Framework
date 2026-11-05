@@ -1,35 +1,34 @@
-# Gradle files
-.gradle/
-build/
-.kotlin/
+# Frida on MuMu Android 15
 
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
+# --- build artifacts ---
 *.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
+*.aab
 *.keystore
+*.jks
+build/
+app/build/
+.gradle/
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
 
-# Android Profiling
-*.hprof
+# --- OS ---
+Thumbs.db
+.DS_Store
+
+# --- Python ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# --- logs (keep sanitized copies only) ---
+logs/raw/
+*.orig
+
+# --- local binaries (download via bin/GET_FRIDA_SERVER.md) ---
+bin/fsyd
+bin/frida-server*
+*.xz
